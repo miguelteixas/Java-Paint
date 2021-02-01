@@ -1,6 +1,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        new Paint(10, 10);
+        new Paint(20, 20);
     }
 }

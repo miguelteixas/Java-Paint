@@ -2,12 +2,27 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Position {
 
-    private Rectangle rectangle;
-    private int padding = Grid.PADDING;
-    private int size = Grid.CELL_SIZE;
+    private int column;
+    private int row;
 
-    public Position(int col, int row) {
-        rectangle = new Rectangle(padding + col * size, padding + row * size, size, size);
-        rectangle.draw();
+    public Position(int column, int row) {
+        this.column = column;
+        this.row = row;
+    }
+
+    public int getColumn() {
+        return column;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
     }
 }
